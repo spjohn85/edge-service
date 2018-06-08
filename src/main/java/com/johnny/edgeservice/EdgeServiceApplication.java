@@ -10,11 +10,6 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @EnableDiscoveryClient
 public class EdgeServiceApplication {
-
-	/*@Bean
-	DiscoveryClientRouteDefinitionLocator discoveryRoutes(DiscoveryClient discoveryClient){
-		return new DiscoveryClientRouteDefinitionLocator(discoveryClient);
-	}*/
 	public static void main(String[] args) {
 		SpringApplication.run(EdgeServiceApplication.class, args);
 	}

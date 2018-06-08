@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - predicates:
+            - Path=/customers/**
+          uri: "http://localhost:8080"
+  application:
+    name: edge-service
+server:
+  port: 8081
